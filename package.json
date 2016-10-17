@@ -1,0 +1,28 @@
+{
+  "name": "code-theme",
+  "version": "1.0.0",
+  "description": "Wordpress theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cerealkiller1918/code-Theme.git"
+  },
+  "keywords": [
+    "Wordpress"
+  ],
+  "author": "Justin Frasier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cerealkiller1918/code-Theme/issues"
+  },
+  "homepage": "https://github.com/cerealkiller1918/code-Theme#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.3",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
