@@ -1,0 +1,29 @@
+
+
+
+@mixin navbutton($bgcolor:gray, $fontcolor:black){
+	li{
+		background-color: $bgcolor;
+		border-radius: 6px;
+		margin-right: 2.5px;
+		margin-left: 2.5px;
+	
+		a{
+			display: block;
+			color: $fontcolor;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		a.current{
+			background-color: $bgcolor -60;
+		}
+
+		a:hover{
+			border-radius: 6px;
+			background-color: $bgcolor - 60;
+		}
+
+	}
+
+}

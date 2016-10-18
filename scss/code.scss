@@ -1,6 +1,28 @@
-#title{
-	text-align: center;
+@import 'mixins';
+
+$bgcolor:#eee - 15;
+$jbcolor: $bgcolor - 15;
+
+body {
+	background-color: $bgcolor;
 }
 
 
 
+
+
+@media screen and (max-width: 768px){
+
+	#categories{
+		visibility: hidden;
+	}
+	
+}
+
+@media screen and (min-width: 768px){
+
+	#categories{
+		visibility: visible;
+	}
+	
+}

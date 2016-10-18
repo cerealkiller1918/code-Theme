@@ -1,20 +1,42 @@
 <!DOCTYPE html>
-<html>
-
+<html lang='en'>
 <head>
-<title><?php bloginfo('title')?></title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8"/>
-<?php wp_head(); ?>
-</head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title> <?php wp_title( " | ", true, 'right' ); ?>  </title>
+
+   
+    <?php wp_head(); ?>
+</head>
 <body>
-<div class='container'>
-<div class='jumbotron'>
-	<h1 id='title'><a href=''><?php bloginfo('name')?></a></h1>
-</div>
-<div class='navbar navbar-defalt'> 
-<div class="container-fluid">
-	<?php wp_nav_menu(array('theme_location'=>'primary') );?>
-</div>
-</div>
+
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <?php
+            wp_nav_menu( array(
+                'menu'              => 'primary',
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+                'container_id'      => 'navbar',
+                'menu_class'        => 'nav navbar-nav navbar-right',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            );
+        ?> 
+    </div>
+  </nav>
+<div class="container">
