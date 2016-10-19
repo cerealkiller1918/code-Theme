@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> <?php wp_title( " | ", true, 'right' ); ?>  </title>
+    <title> <?php bloginfo( 'name'); ?> <?php wp_title('|'); ?> </title>
 
    
     <?php wp_head(); ?>
@@ -13,7 +13,7 @@
 <body>
 
   <nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container-fluid">
+    <div class="container">
       <div class="navbar-header">
 
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -22,7 +22,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Project name</a>
+        <a class="navbar-brand" href="<?php echo get_bloginfo( 'home', 'raw' ); ?>"><?php echo get_bloginfo( 'name', 'display' ); ?></a>
+
       </div>
       <?php
             wp_nav_menu( array(
