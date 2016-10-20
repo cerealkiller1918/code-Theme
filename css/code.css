@@ -1,11 +1,14 @@
 body {
   background-color: #dfdfdf;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  padding-top: 80px; }
 
 @media screen and (max-width: 768px) {
   #categories {
-    visibility: hidden; } }
+    visibility: hidden;
+    max-height: 0; } }
 
 @media screen and (min-width: 768px) {
   #categories {
-    visibility: visible; } }
+    visibility: visible;
+    max-height: 100%; } }

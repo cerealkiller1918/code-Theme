@@ -22,6 +22,7 @@
   "devDependencies": {
     "browser-sync": "^2.17.3",
     "gulp": "^3.9.1",
+    "gulp-git": "^1.12.0",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.2"
   }
