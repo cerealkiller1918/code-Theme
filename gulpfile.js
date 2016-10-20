@@ -18,6 +18,7 @@ gulp.task('pull', function(){
   git.pull('origin', 'master', {args: '--rebase'}, function (err) {
     if (err){
     	console.log('Did not pull');
+    	throw err;
     }
   });
 });

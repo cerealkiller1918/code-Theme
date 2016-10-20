@@ -1,4 +1,4 @@
 *.log
-
+*.backup
 /gulp/node_modules
 /node_modules
