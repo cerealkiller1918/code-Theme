@@ -4,14 +4,12 @@ $bgcolor:#eee - 15;
 $jbcolor: $bgcolor - 15;
 
 body {
-	background-color: $bgcolor;
+	background-color: $bgcolor - red - blue;
 	padding-bottom: 60px;
 	padding-top: 80px;
+
+	
 }
-
-
-
-
 
 @media screen and (max-width: 768px){
 

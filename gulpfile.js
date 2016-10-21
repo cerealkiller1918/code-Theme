@@ -14,15 +14,6 @@ gulp.task('scss', function () {
 
 });
 
-gulp.task('pull', function(){
-  git.pull('origin', 'master', {args: '--rebase'}, function (err) {
-    if (err){
-    	console.log('Did not pull');
-    	throw err;
-    }
-  });
-});
-
 
 
 gulp.task('watch', function(){
@@ -33,4 +24,7 @@ gulp.task('watch', function(){
 	gulp.watch('./**/*.php').on('change', browserSync.reload);
 });
 
-gulp.task('default',['pull','scss', 'watch']);
+
+
+
+gulp.task('default',['scss', 'watch']);
