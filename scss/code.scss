@@ -1,6 +1,7 @@
 @import 'mixins';
 
-$bgcolor:#eee - 15;
+$bgcolor:#eee - 50;
+$contentbg: $bgcolor + 30;
 $jbcolor: $bgcolor - 15;
 
 body {
@@ -10,6 +11,25 @@ body {
 
 	
 }
+
+.jumbotron, .panel{
+	background-color: $contentbg;
+}
+
+.footer{
+	background-color: $contentbg + 200;
+}
+
+.body-meat{
+	padding-top: 15px;
+}
+
+#categories{
+	padding-top: 15px;
+
+
+}
+
 
 @media screen and (max-width: 768px){
 

@@ -1,7 +1,19 @@
 body {
-  background-color: #dfdfdf;
+  background-color: #bcbcbc;
   padding-bottom: 60px;
   padding-top: 80px; }
+
+.jumbotron, .panel {
+  background-color: #dadada; }
+
+.footer {
+  background-color: white; }
+
+.body-meat {
+  padding-top: 15px; }
+
+#categories {
+  padding-top: 15px; }
 
 @media screen and (max-width: 768px) {
   #categories {
